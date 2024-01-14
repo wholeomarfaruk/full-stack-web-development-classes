@@ -1,0 +1,239 @@
+/*===================================================
+============== Import Files   =========================
+=====================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+/*===================================================
+============== COMMON CSS   =========================
+=====================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.custom-btn{
+    margin: 0 2px;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 25px;
+    background-color: #0d52ac;
+    text-decoration: none;
+}
+.custom-btn:hover{
+    background-color: #163b6b;
+
+}
+/*===================================================
+============== CLASS DETAILS    =====================
+=====================================================*/
+#class-details{
+    text-align: center;
+    padding: 10px 50px;
+    margin: 20px 0;
+}
+
+/*===================================================
+============== PRACTICE AREA       =====================
+=====================================================*/
+#Practice_area{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #eee;
+    margin: 10px 0;
+}
+#Practice_area > h3{
+    text-align: center;
+    color: green;
+}
+/* practice topic  */
+.practice-topic{
+    padding: 50px;
+    margin: 10px 50px;
+    border: 2px solid red;
+    background-color: aliceblue;
+
+}
+.show-like-table p:nth-child(even){
+background-color: rgb(238, 242, 243);
+padding: 10px 5px;
+}
+.show-like-table p:nth-child(odd){
+background-color: rgb(189, 201, 188);
+padding: 10px 5px;
+}
+.bg-img{
+    background-image: url("../../img/shikhbe-shobai-group-photo.jpg");
+    padding: 50px;
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    
+}
+.bg-img >div {
+    margin-top: 300px;
+    width: 60%;
+    height: fit-content;
+    padding: 10px 20px;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    background: linear-gradient(45deg, #72729580, #a6ff00ad);
+
+    
+}
+.bg-img  h2{
+    text-transform: uppercase;
+}
+.bg-img  button{
+    letter-spacing: 1px;
+    
+    padding: 10px 20px;
+    background-color: tomato;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 2px 2px rgb(184, 182, 182);
+}
+/*==============================================
+===============header-home area style   ==============
+================================================*/
+#header-home{
+    width: 97%;
+    margin: 10px auto;
+}
+/*==============================================
+===============Header area style   ==============
+================================================*/
+#header_area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ /* LOGO  */
+ #header_area  #logo {
+    object-fit: cover;
+    height: 5rem;
+}
+#logo  img {
+    width: auto;
+    height: 100%;
+}
+
+/*==============================================
+===============Navbar style   ==================
+================================================*/
+#nav{
+    /* background-color: seagreen; */
+    /* font-family: 'sora', 'sans-serif'; */
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+}
+#nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+#nav ul ul{
+
+    text-align: left;
+}
+
+#nav ul li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+   
+#nav ul li a{
+display: block;
+padding: 12px 15px;
+color: #000;
+text-decoration: none;
+text-transform: uppercase;
+}
+#nav ul li a:hover{
+    color: #fff;
+    background-color: #292929; /* for default bg color */
+}
+#nav ul li:hover a{  /* cause a tag is has block property power and ul or li dont have any margin or padding */
+    background-color: #1a8b73;
+}
+#nav ul ul li:hover a{
+    background-color: #10b943;
+}
+
+/* Dorpdown Menu  */
+#nav ul ul{
+    position: absolute;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    z-index: 99999;
+    display: none;
+    
+}
+
+#nav ul li:hover > ul{
+    display: block;
+}
+#nav ul ul li{
+    display: block;
+}
+#nav ul ul li a{
+    
+    display: block;
+}
+
+#nav ul ul li:hover{
+    border-left: 3px solid #292929;
+}
+#nav ul ul li:hover a{
+    background-color: #16a085;
+}
+#nav ul ul ul li:hover a{
+    background-color: #31c0a1;
+}
+#nav ul ul ul{
+    top: 0;
+    left: 100%;
+}
+
+
+/*==============================================
+===============HOme Section style   ==================
+================================================*/
+#home{
+    margin: 0 auto;
+    width: 97%;
+    display: flex;
+    align-items: center;
+
+}
+.intro_text{
+    margin-left: 80px;
+}
+.intro_text h1{
+    font-size: 2.3em;
+    font-weight: 800;
+    color: #0d52ac;
+}
+.intro_text p{
+    /* font-size: 1em; */
+    color: #0d52ac;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.intro_text a{
+    /* font-size: 1em; */
+    margin-top: 5px;
+    border-radius: 10px;
+}
